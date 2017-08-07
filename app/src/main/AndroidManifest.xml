@@ -22,12 +22,17 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name=".broadcast.MySecondReceiver">
+            <intent-filter>
+                <action android:name="my.custom.action.name" />
+            </intent-filter>
+        </receiver>
+
         <receiver android:name=".activity.MainActivity$MyFirstBroadcast">
             <intent-filter>
                 <action android:name="my.custom.action.name" />
             </intent-filter>
-
         </receiver>
-    </application>
 
+    </application>
 </manifest>

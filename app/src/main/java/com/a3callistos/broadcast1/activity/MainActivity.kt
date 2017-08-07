@@ -25,13 +25,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sendBroadcastMessage(v: View) {
-        var intent: Intent = Intent(this, MyFirstReceiver::class.java)
+        var intent: Intent = Intent("my.custom.action.name")
         sendBroadcast(intent)
     }
 
     fun innerReceiver(v: View) {
-        val intent: Intent = Intent(this, MyFirstBroadcast::class.java)
-        sendBroadcast(intent)
+//        val intent: Intent = Intent(this, MyFirstBroadcast::class.java)
+//        sendBroadcast(intent)
     }
 
     class MyFirstBroadcast : BroadcastReceiver() {
