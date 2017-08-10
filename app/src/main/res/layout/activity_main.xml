@@ -4,13 +4,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <Button
-        android:id="@+id/BroadcastNow"
+        android:id="@+id/methodOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="sendBroadcastMessage"
-        android:text="First Receiver"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:onClick="methodOne"
+        android:text="M1" />
+
+    <Button
+        android:id="@+id/methodTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="methodTwo"
+        android:text="M2" />
+
 
 </LinearLayout>
