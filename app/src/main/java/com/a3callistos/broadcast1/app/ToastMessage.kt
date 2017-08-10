@@ -11,7 +11,7 @@ class ToastMessage {
 
     companion object {
         fun makeToast(ctx: Context?, msg: String) {
-            Toast.makeText(ctx, "Message from " + msg, Toast.LENGTH_LONG).show()
+            Toast.makeText(ctx, "Message from " + msg, Toast.LENGTH_SHORT).show()
         }
 
     }

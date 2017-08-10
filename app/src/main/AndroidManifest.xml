@@ -9,30 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <receiver android:name=".broadcast.MyFirstReceiver">
-            <intent-filter>
-                <action android:name="my.custom.action.name" />
-            </intent-filter>
-        </receiver>
-
-        <receiver android:name=".broadcast.MySecondReceiver">
-            <intent-filter>
-                <action android:name="my.custom.action.name" />
-            </intent-filter>
-        </receiver>
-
-        <receiver android:name=".activity.MainActivity$MyFirstBroadcast">
-            <intent-filter>
-                <action android:name="my.custom.action.name" />
-            </intent-filter>
-        </receiver>
 
     </application>
 </manifest>
